@@ -1,0 +1,729 @@
+* 
+{
+    margin:0;
+    overflow-x:hidden;
+    
+    
+}
+
+.header 
+{
+    height:8vh;
+    padding:0px 15px;
+    background-color:whitesmoke;
+    display:flex;
+    align-items:center;
+    justify-content:space-between;
+}
+
+.header_right 
+{
+    display:flex;
+    gap:10px;
+}
+
+.header_right input 
+{
+    border-radius:17px;
+    text-align:center;
+    border:1px solid black;
+}
+
+ 
+
+
+#login_btn 
+{
+    
+    border-radius:17px;
+    border-width:1px;
+    cursor:pointer;
+    padding:7px 20px;
+    background-color:white;
+    font-weight:bold;
+}
+
+#menu_btn 
+{
+    
+    border-radius:17px;
+    border-width:1px;
+    cursor:pointer;
+    padding:7px 10px;
+    background-color:white;
+    font-weight:bold;
+}
+
+.section 
+{
+    
+    padding:70px 0 0 15px;
+    background-image:url("https://static.wixstatic.com/media/c837a6_977fd116499b43ae8f309afaf18cbade~mv2.jpg/v1/fill/w_1225,h_1050,al_c,q_85,usm_0.66_1.00_0.01,enc_avif,quality_auto/c837a6_977fd116499b43ae8f309afaf18cbade~mv2.jpg");
+    background-repeat:no-repeat;
+    
+    width:100%;
+    background-position:50% 50%;
+    
+    background-size:cover;
+    background-attachment:fixed;
+    
+    height:100vh;
+    overflow:hidden;
+    
+}
+
+
+
+@keyframes slide 
+{
+    from{
+        transform:translateY(100%)
+        
+        
+        
+    }
+    to {
+        transform:translateY(0)
+        
+    }
+}
+
+
+
+
+
+.step_up p  
+{
+    font-size:75px;
+    font-weight:bold;
+    font-family: Arial, Helvetica, sans-serif;
+    
+    animation:slide 1.5s linear;
+    
+}
+
+
+
+.prem_shoes p 
+{
+    padding:70px 0 10px 0;
+    font-size:20px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight:lighter;
+    animation:slide 1.5s linear;
+    
+}
+
+
+
+.shop_btn button 
+{
+    background-color:black;
+    color:goldenrod;
+    cursor:pointer;
+    border-width:1px;
+    border-radius:17px;
+    padding:10px 17px;
+    font-size:12px;
+    font-weight:600;
+    border:1px solid black;
+    overflow:hidden;
+    animation:slide 1.5s linear;
+}
+
+.shop_btn button:hover 
+{
+    background-color:white;
+    color:black;
+    
+}
+
+.section_right 
+{
+    margin-top:100px;
+    display:flex;
+    float:right;
+    border:2px solid black;
+    width:25%;
+    background-color:rgba(250, 230, 230,0.8);
+    margin-right:100px;
+    border:none;
+    border-radius:10px;
+    padding:10px 10px 10px 10px;
+    gap:10px;
+    
+}
+
+.shoe_pic  
+{
+    
+    flex:0.7;
+    height:250px;
+    
+}
+
+
+
+.shoe_pic img 
+{
+    width:100%;
+    height:100%;
+    
+    cursor:pointer;
+    
+    
+}
+
+.shoe_pic .second_pic 
+{
+    display:none;
+}
+
+.shoe_pic:hover .first_pic 
+{
+    display:none;
+}
+
+.shoe_pic:hover .second_pic 
+{
+    display:block;
+}
+
+.shoe_pic::-webkit-scrollbar 
+{
+    display:none;
+}
+
+
+
+.shoe_content 
+{
+        
+    
+    flex:0.3;
+}
+
+.shoe_content p:first-child 
+{
+    
+    font-size:20px;
+    font-weight:600;
+    font-family:Arial, Helvetica, sans-serif;
+
+}
+
+.price 
+{
+    padding-top:10px;
+    padding-bottom:130px;
+
+}
+
+.del 
+{
+    color:rgb(81, 79, 79);
+}
+
+.addcart_btn 
+{
+    font-size:12px;
+    margin-left:10px;
+    padding:10px 8px;
+    border-radius:20px;
+    cursor:pointer;
+    font-weight:600;
+    border:1px solid black;
+    background-color:transparent;
+    
+
+}
+
+.addcart_btn:hover 
+{
+    
+    background-color:black;
+    color:goldenrod;
+    
+}
+
+.seller 
+{
+    padding:80px 20px;
+    
+    
+}
+
+.seller_top 
+{
+    display:flex;
+    justify-content:space-between
+}
+
+.seller_top p 
+{
+    font-size:20px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.seller_top button 
+{
+    padding:10px 15px;
+    cursor:pointer;
+    border-radius:20px;
+    font-size:12px;
+    font-weight:600;
+    border:1px solid black;
+}
+
+.seller_top button:hover 
+{
+    background-color:black;
+    color:goldenrod;
+    
+}
+
+.seller_bottom 
+{
+    display:grid;
+    grid-template-columns:25% 25% 25% 25%;
+    padding:60px 20px 20px 40px;
+}
+
+.hover_images 
+{
+    position:relative;
+}
+
+.hover_images .first_image 
+{    
+    width:88%;
+    border-radius:15px;
+    cursor:pointer;
+}
+
+.hover_images .second_image 
+{
+    display:none;
+    width:88%;
+    
+    border-radius:15px;
+    cursor:pointer;
+    
+}
+
+.hover_images:hover .first_image 
+{
+    display:none;
+    
+}
+
+.hover_images:hover .second_image 
+{
+    display:block;
+    
+}
+
+.hover_images_absolute 
+{
+    position:absolute;
+    top:10%;
+    left:5%;
+}
+
+.hover_images_absolute p 
+{
+    background-color:white;
+    padding:5px 10px;
+    border-radius:5px;
+    font-size:13px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.items_details 
+{
+    padding-top:18px;
+}
+
+.shoe_desc 
+{
+    padding-bottom:5px;
+    font-size:14px;
+    font-weight:600;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+
+
+
+.kid_section 
+{
+    padding:70px 0 0 15px;
+    height:100vh;        
+                        
+    background-image:url("https://static.wixstatic.com/media/c837a6_85f98ee8e54f46219d6accebd1eac92a~mv2.jpg/v1/fill/w_1225,h_1026,al_t,q_85,usm_0.66_1.00_0.01,enc_avif,quality_auto/c837a6_85f98ee8e54f46219d6accebd1eac92a~mv2.jpg");
+    background-attachment:fixed;
+    background-repeat:no-repeat;
+    background-size:1550px 100% ;
+    background-position:center;
+    overflow:hidden;
+    
+    
+    
+    
+    
+    
+}
+
+.section_right2 
+{
+    position:relative;
+    margin-top:100px;
+    display:flex;
+    float:right;
+    border:2px solid black;
+    width:25%;
+    background-color:rgba(250, 230, 230,0.8);
+    margin-right:70px;
+    border:none;
+    border-radius:10px;
+    padding:10px 10px 10px 10px;
+    gap:10px;
+}
+
+.step_up2 
+{
+    overflow:clip;
+}
+
+
+
+.step_up2 p  
+{
+    width:450px;
+    font-size:75px;
+    font-weight:bold;
+    font-family: Arial, Helvetica, sans-serif;
+    animation:slide   1.5s linear;
+    
+    
+    
+}
+
+.prem_shoes2 p 
+{
+    padding:70px 0 10px 0;
+    font-size:20px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight:lighter;
+    animation:slide 1.5s linear;
+}
+
+.shop_btn2 button 
+{
+    background-color:black;
+    color:goldenrod;
+    cursor:pointer;
+    border-width:1px;
+    border-radius:17px;
+    padding:10px 17px;
+    font-size:12px;
+    font-weight:600;
+    border:1px solid black;
+    animation:slide 1.5s linear;
+}
+
+.collections 
+{
+    padding:80px 20px;
+}
+
+.collections_header 
+{
+    display:flex;
+    justify-content:space-between;
+}
+
+.collections_header p 
+{
+    font-size:20px;    
+    font-weight:400;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.collections_header button 
+{
+    padding:10px 15px;
+    cursor:pointer;
+    border-radius:20px;
+    font-size:12px;
+    font-weight:600;
+}
+
+.collections_header button:hover 
+{
+    background-color:black;
+    color:goldenrod;
+    
+}
+
+.collection_bottom 
+{
+    display:grid;
+    grid-template-columns:33.33% 33.33% 33.33%;
+    padding:60px 20px 20px 40px;
+}
+
+.shoe_collection 
+{
+    height:550px;
+    width:80%
+}
+
+.shoe_relative
+{
+    height:90%;
+    width:100%;
+    border-radius:15px;
+    position:relative;
+
+}
+
+
+
+.shoe_relative img 
+{
+    height:100%;
+    width:100%
+
+    
+}
+
+.shoe_absolute  
+{
+    position:absolute;
+    top:90%;
+    left:10%;
+}
+
+.shoe_absolute button 
+{
+    padding:10px;
+    border-radius:20px;
+    border:1px solid black;
+    background-color:transparent;
+    cursor:pointer;
+    font-size:12px;
+    font-weight:600;
+}
+
+.shoe_absolute button:hover 
+{
+    background-color:black;
+    color:goldenrod;
+    
+}
+
+
+.end_section 
+{
+    padding:70px 0 0 15px;
+    height:100vh;        
+    
+    background-image:url("https://static.wixstatic.com/media/c837a6_6b04b65869124042a744e4d732b75473~mv2.jpg/v1/fill/w_1225,h_1100,al_b,q_85,usm_0.66_1.00_0.01,enc_avif,quality_auto/c837a6_6b04b65869124042a744e4d732b75473~mv2.jpg");
+    background-attachment:fixed;
+    background-repeat:no-repeat;
+    background-size:1550px 100%;
+    background-position:center;
+    overflow:hidden;
+}
+
+.endleft_content 
+{
+    
+    font-size:65px;
+    font-weight:600;
+    width:450px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.endsection_right 
+{
+    margin-top:300px;
+    float:right;
+    
+    border:2px solid black;
+    width:23%;
+    background-color:rgba(67, 66, 66, 0.6);
+    backdrop-filter:blur(5px);
+    color:white;
+    
+    margin-right:100px;
+    border:none;
+    border-radius:10px;
+    padding:15px;
+    gap:10px;
+}
+
+
+.readmore_btn 
+{
+    font-size:12px;
+    
+    padding:10px 14px;
+    border:1px solid white;
+    background-color:transparent;
+    color:white;
+    border-radius:20px;
+    cursor:pointer;
+    font-weight:600;
+
+}
+
+.readmore_btn:hover 
+{
+    color:black;
+    background-color:goldenrod;
+    border:1px solid goldenrod;
+}
+
+.first_line
+{
+    padding:10px 5px 30px 5px;
+    font-size:12px;
+    font-weight:600;
+    width:300px;
+}
+
+.second_line 
+{
+    
+    padding-bottom:15px;
+    padding-left:5px;
+    font-size:15px;
+    color:rgb(245, 244, 244);
+}
+
+.footer 
+{
+    height:100vh;
+    width:100vw;
+    background-color:black;
+    padding:20px 30px 20px 0;
+}
+
+.footer_content 
+{
+    padding:40px 40px 20px 40px;
+    width:60%;
+    height:90%;
+    float:right;
+    
+}
+
+.footer_content_top 
+{
+    padding:40px;
+    
+    border:1px solid black;
+    background-color:rgb(254, 199, 79);
+    border-radius:10px;
+}
+
+.sign_in
+{
+    padding:20px 0;
+}
+
+.footer_content_top input[type=text]
+{
+    width:92%;
+    padding:10px;
+    border-radius:10px;
+    background-color:transparent;
+    border:1px solid black
+}
+
+.footer_content_top input[type=text]:hover
+{
+    
+    background-color:white;
+    
+}
+
+.footer_content_top .check
+{
+    color:transparent;
+
+}
+
+.footer_content_top input[type=submit]
+{
+    margin:50px 0 0 230px;
+    width:40%;
+    border-radius:10px;
+    padding:10px;
+    background-color:transparent;
+    border:1px solid black;
+    cursor:pointer;
+}
+
+.email 
+{
+    padding:20px 0;
+}
+
+.grid_one 
+{
+    display:grid;
+    grid-template-columns:33.3% 33.3% 33.3%;
+    color:white;
+    padding-top:20px;
+    
+}
+
+.grid_one p 
+{
+    border:1px solid white;
+    width:90%;
+    margin:10px;
+    padding:7px 0 7px 15px;
+    border-radius:10px;
+
+}
+
+.heading 
+{
+    color:black;
+    background-color:white;
+    font-weight:600;
+    font-size:16px;
+    
+}
+
+.grid_two 
+{
+    display:grid;
+    grid-template-columns:11.11% 11.11% 11.11% 33.3% 33.3%;
+    color:white;
+    
+    
+}
+
+.grid_two p 
+{
+    border:1px solid white;
+    width:90%;
+    margin:10px;
+    padding:7px 0 7px 15px;
+    border-radius:10px;
+    cursor:pointer;
+
+}
+
+.sub_grid 
+{
+    width:70% !important;
+}
+
+
+
