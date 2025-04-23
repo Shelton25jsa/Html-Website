@@ -74,6 +74,8 @@
 
 
 
+
+
 @keyframes slide 
 {
     from{
@@ -129,6 +131,7 @@
     border:1px solid black;
     overflow:hidden;
     animation:slide 1.5s linear;
+    
 }
 
 .shop_btn button:hover 
@@ -203,7 +206,7 @@
     flex:0.3;
 }
 
-.shoe_content p:first-child 
+.shoe_content_name 
 {
     
     font-size:20px;
@@ -256,13 +259,16 @@
 .seller_top 
 {
     display:flex;
-    justify-content:space-between
+    justify-content:space-between;
+    overflow:hidden;
+    
 }
 
 .seller_top p 
 {
     font-size:20px;
     font-family: Arial, Helvetica, sans-serif;
+    
 }
 
 .seller_top button 
@@ -273,6 +279,7 @@
     font-size:12px;
     font-weight:600;
     border:1px solid black;
+    
 }
 
 .seller_top button:hover 
@@ -392,8 +399,10 @@
 
 .step_up2 
 {
-    overflow:clip;
+    overflow:hidden;
 }
+
+
 
 
 
@@ -409,6 +418,11 @@
     
 }
 
+.prem_shoes2 
+{
+    overflow:hidden;
+}
+
 .prem_shoes2 p 
 {
     padding:70px 0 10px 0;
@@ -416,6 +430,11 @@
     font-family: Arial, Helvetica, sans-serif;
     font-weight:lighter;
     animation:slide 1.5s linear;
+}
+
+.shop_btn2 
+{
+    overflow:hidden;
 }
 
 .shop_btn2 button 
@@ -430,6 +449,7 @@
     font-weight:600;
     border:1px solid black;
     animation:slide 1.5s linear;
+    overflow:hidden;
 }
 
 .collections 
@@ -441,6 +461,7 @@
 {
     display:flex;
     justify-content:space-between;
+    overflow:hidden;
 }
 
 .collections_header p 
@@ -503,6 +524,7 @@
     position:absolute;
     top:90%;
     left:10%;
+    overflow:hidden;
 }
 
 .shoe_absolute button 
@@ -618,6 +640,7 @@
     height:90%;
     float:right;
     
+    
 }
 
 .footer_content_top 
@@ -672,23 +695,55 @@
     padding:20px 0;
 }
 
+.footer_table 
+{
+    padding-top:20px;
+    display:flex;
+}
+
 .grid_one 
 {
-    display:grid;
-    grid-template-columns:33.3% 33.3% 33.3%;
+    display:flex;
+    flex-direction:column;
+    flex:0.33;
     color:white;
-    padding-top:20px;
+    
     
 }
 
-.grid_one p 
+.sub_grid_one p 
 {
     border:1px solid white;
     width:90%;
     margin:10px;
+    margin-top:20px;
+    margin-left:0;
     padding:7px 0 7px 15px;
     border-radius:10px;
 
+
+}
+
+.sub_grid_one p:first-child 
+{
+    margin-top:10px;
+}
+
+
+
+.sub_grid_two p 
+{
+    border:1px solid white;
+    width:90%;
+    margin:10px;
+    margin-left:0;
+    padding:7px 0 7px 15px;
+    border-radius:10px;
+}
+
+.sub_grid_two_content 
+{
+    display:flex;
 }
 
 .heading 
@@ -702,8 +757,9 @@
 
 .grid_two 
 {
-    display:grid;
-    grid-template-columns:11.11% 11.11% 11.11% 33.3% 33.3%;
+    display:flex;
+    flex-direction:column;
+    flex:0.33;
     color:white;
     
     
@@ -724,6 +780,355 @@
 {
     width:70% !important;
 }
+
+.grid_three 
+{
+    display:flex;
+    flex-direction:column;
+    flex:0.34;
+    color:white;
+}
+
+.grid_three p 
+{
+    border:1px solid white;
+    width:90%;
+    margin:10px;
+    padding:7px 0 7px 15px;
+    border-radius:10px;
+    cursor:pointer;
+
+}
+
+.contain 
+{
+    
+    padding:50px 0 0 50px;
+    
+    width: 100%;
+    height:70vh;
+    overflow:hidden;
+    box-sizing:border-box;
+    float:right;
+}
+
+
+  
+.item 
+{
+    
+    background-color: tomato;
+    color: white;
+    
+    height: 55%;
+    width:75%;
+    margin-left:10px;
+    overflow:hidden;
+    
+    
+}
+
+.owl-stage-outer 
+{
+    padding-left:60px;
+    box-sizing:border-box;
+}
+
+.carousel_heading 
+{
+    font-weight:600;
+    font-size:13px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.carousel_content 
+{
+    padding-top:20px;
+}
+
+.carousel_name 
+{
+    padding-top:80px;
+    font-size:13px;
+    font-weight:600;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+#owl-carousel 
+{
+    overflow:hidden;
+    width:60%;
+    float:right;
+    padding-top:80px;
+    
+}
+
+.black_theme 
+{
+    color:white;
+    background-color:black;
+    border-radius:5px;
+    padding:30px;
+    box-sizing:border-box;
+}
+
+.white_theme 
+{
+    color:black;
+    background-color:white;
+    border:1px solid black;
+    border-radius:5px;
+    padding:30px;
+    box-sizing:border-box;
+}
+
+.owl-item 
+{
+    
+    margin-right:0 !important;
+}
+
+.owl-nav 
+{
+    position:absolute;
+    height:100%;
+    width:100%;
+    display:flex;
+    font-size:30px;
+    justify-content:space-between;
+    top:0;
+    left:0;
+}
+
+.owl-stage-outer 
+{
+    position:relative;
+}
+
+.owl-prev 
+{
+    background-color:transparent !important;
+    color:black !important;
+    margin-right:30px !important;
+}
+
+.owl-next 
+{
+    background-color:transparent !important;
+    color:black !important;
+}
+
+#reviews 
+{
+    font-size:20px;
+    font-weight:400;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+@media screen and ( max-width : 400px ) 
+{
+
+    .step_up p 
+    {
+        font-size:33px;        
+    }
+
+    .owl-nav 
+    {
+        display:none;
+    }
+
+    .prem_shoes p
+    {
+        padding-top:20px;
+        font-size:17px;
+    }
+    .section_right
+    {
+        width:63%;
+        height:38%;
+        margin-right:30px;
+        display:flex;
+        flex-direction:column;
+        padding:17px 10px;
+
+    }
+
+    .shoe_pic 
+    {
+        flex:0.77;  
+
+    }
+
+    
+
+    .shoe_content 
+    {
+        flex:0.23;
+        overflow:hidden;
+    }
+
+    .shoe_content_name 
+    {        
+        font-size:20px;
+        font-weight:500;
+        
+
+    }
+
+    .seller_bottom 
+    {
+        display:flex;
+        flex-direction:column;
+        padding:60px 10px 20px 10px;
+    }
+
+    .hover_images .first_image 
+    {    
+        width:100%;
+        height:373px;
+        
+    }
+
+    .hover_images .second_image 
+    {
+        
+        width:100%;
+        height:373px;               
+        
+    }
+
+    .items_details 
+    {
+        padding:15px 0 27px 0;
+    }
+
+    .shoe_desc 
+    {
+        font-size:13px;
+    }
+
+    .kid_section 
+    {
+        background-size:564px 100%;
+        background-position:50% 50%;
+    }
+
+    .step_up2 p 
+    {
+        font-size:33px;        
+    }
+
+    .section_right2
+    {
+        width:63%;
+        height:38%;
+        margin-right:30px;
+        display:flex;
+        flex-direction:column;
+        padding:17px 10px;
+
+    }
+
+    .prem_shoes2 p
+    {
+        padding-top:20px;
+        font-size:17px;
+    }
+
+    .collections_header button 
+    {
+        display:none;
+    }
+
+    .collection_bottom 
+    {
+        display:flex;
+        flex-direction:column;
+        padding:20px 0 0 0;
+    }
+    .shoe_collection 
+    {
+        width:100%;
+        
+    }
+
+    .shoe_relative
+    {        
+        height:90%;                        
+    }
+
+    .shoe_absolute 
+    {
+        left:25%;
+    }
+
+    .endleft_content 
+    {
+        font-size:40px;
+    }
+
+    .end_section 
+    {
+        height:580px;
+        background-size:100% 100%;
+    }
+
+    .endsection_right 
+    {
+        margin-top:200px;
+        margin-right:20px;
+        width:70%;
+    }
+
+    .footer_content 
+    {
+        overflow:hidden;
+        width:90%;
+        padding:40px 20px 20px 20px;
+        height:200vh;
+        overflow:hidden;
+        
+    }
+
+    .footer_content_top 
+    {
+        padding:20px;
+        
+    }
+
+    .footer_content_top input[type="text"] 
+    {
+        width:100%;
+    }
+
+    .footer_table 
+    {
+        display:flex;
+        flex-direction:column;
+    }
+
+    .sub_grid_one p 
+    {        
+        width:94%;
+        margin:10px 4px 10px 4px;
+    }
+
+    .sub_grid_two p 
+    {        
+        width:94%;
+        margin:0 4px 10px 4px;
+    }
+
+    #media_heading 
+    {
+        margin-top:40px;
+    }
+
+    
+}
+
+
 
 
 

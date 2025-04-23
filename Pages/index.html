@@ -4,10 +4,17 @@
         <link rel="stylesheet" href="style.css">
         <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
         <link rel="stylesheet" href="../../assets/vendor/aos/dist/aos.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.css">
+        <link rel="stylesheet" href="https://unpkg.com/aos@2.3.1/dist/aos.css">
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.js"></script>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     </head>
     <body>
-        <script src="https://unpkg.com/aos@"></script>
+        <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
         <script>
 
         </script>
@@ -51,7 +58,7 @@
 
                 </div>
                 <div class="shoe_content">
-                    <p>Marathon Master</p>
+                    <p class="shoe_content_name">Marathon Master</p>
                     <p class="price">$160.00 <del class="del">$180.00</del></p>
                     <button class="addcart_btn">ADD TO CART</button>
                 </div>
@@ -60,8 +67,8 @@
         </div>
         <div class="seller">
             <div class="seller_top">
-                <p>BEST SELLERS</p>
-                <button>VIEW ALL</button>
+                <p data-aos="fade-up" data-aos-duration="1500" data-aos-once="true">BEST SELLERS</p>
+                <button data-aos="fade-up" data-aos-duration="1500" data-aos-once="true">VIEW ALL</button>
             </div>
             <div class="seller_bottom">
                 <div class="seller_items">
@@ -125,14 +132,14 @@
         
         <div class="kid_section">
             <div class="section_left2">
-                <div class="step_up2">
-                    <p >20% Off Kids Styles</p>
+                <div  class="step_up2">
+                    <p data-aos="fade-up" data-aos-duration="1500" data-aos-once="true">20% Off Kids Styles</p>
                 </div>
-                <div class="prem_shoes2">
-                    <p >Exclusive,one-time offer</p>
+                <div  class="prem_shoes2">
+                    <p data-aos="fade-up" data-aos-duration="1500" data-aos-once="true">Exclusive,one-time offer</p>
                 </div>
-                <div class="shop_btn2">
-                    <button >SHOP NOW</button>
+                <div  class="shop_btn2">
+                    <button data-aos="fade-up" data-aos-duration="1500" data-aos-once="true">SHOP NOW</button>
                 </div>
                 
                 
@@ -161,15 +168,15 @@
         
         <div class="collections">
             <div class="collections_header">
-                <p>SHOP BY COLLECTION</p>
-                <button>VIEW ALL</button>
+                <p data-aos="fade-up" data-aos-duration="1500" data-aos-once="true">SHOP BY COLLECTION</p>
+                <button data-aos="fade-up" data-aos-duration="1500" data-aos-once="true">VIEW ALL</button>
             </div>
             <div class="collection_bottom">
                 <div class="shoe_collection">
                     <div class="shoe_relative">
                         <img src="https://static.wixstatic.com/media/c837a6_7407d6560448416a996712cac8ce5c9c~mv2.jpg/v1/fill/w_398,h_650,al_c,q_80,usm_0.66_1.00_0.01,enc_avif,quality_auto/c837a6_7407d6560448416a996712cac8ce5c9c~mv2.jpg" alt="shoe">
                         <div class="shoe_absolute">
-                            <button>PERFORMANCE SERIES</button>
+                            <button data-aos="fade-up" data-aos-duration="1500" data-aos-once="true">PERFORMANCE SERIES</button>
                         </div>
                     </div>                                        
                 </div>
@@ -177,7 +184,7 @@
                     <div class="shoe_relative">
                         <img src="https://static.wixstatic.com/media/c837a6_a5a5863d6d7341958148ce678ac1a49a~mv2.jpg/v1/fill/w_399,h_650,al_c,q_80,usm_0.66_1.00_0.01,enc_avif,quality_auto/c837a6_a5a5863d6d7341958148ce678ac1a49a~mv2.jpg" alt="shoe">
                         <div class="shoe_absolute">
-                            <button>LIMITED EDITON</button>                            
+                            <button data-aos="fade-up" data-aos-duration="1500" data-aos-once="true">LIMITED EDITON</button>                            
                         </div>                        
                     </div>                                        
                 </div>
@@ -185,7 +192,7 @@
                     <div class="shoe_relative">
                         <img src="https://static.wixstatic.com/media/c837a6_d70089b44d104fc59d5366f6ff53851b~mv2.jpg/v1/fill/w_399,h_650,al_c,q_80,usm_0.66_1.00_0.01,enc_avif,quality_auto/c837a6_d70089b44d104fc59d5366f6ff53851b~mv2.jpg" alt="shoe">
                         <div class="shoe_absolute">
-                            <button>KIDS COLLECTION</button>
+                            <button data-aos="fade-up" data-aos-duration="1500" data-aos-once="true">KIDS COLLECTION</button>
                         </div>
                     </div>
                     
@@ -196,7 +203,7 @@
         </div>
         <div class="end_section">
             <div class="endsection_left">
-                <p class="endleft_content">Committed to Sustainability</p>
+                <p data-aos="fade-up" data-aos-duration="1500" data-aos-once="true" class="endleft_content">Committed to Sustainability</p>
 
             </div>
             
@@ -210,6 +217,27 @@
                 </div>
             </div>
 
+        </div>
+        <div class="contain">
+            <p id="reviews">CUSTOMER REVIEWS</p>
+            <div id="owl-carousel" class="owl-carousel owl-theme">
+              <div class="item white_theme">
+                <p class="carousel_heading"><q>A MUST-HAVE FOR EVERY ATHLETE</q></p>
+                <p class="carousel_content"><q>I'm a review.Click to edit me and add text from a critic who has evaluated you and your work</q></p>
+                <p class="carousel_name">Luffy</p>
+              </div>
+              <div class="item black_theme">
+                <p class="carousel_heading"><q>ECO-FRIENDLY AND DURABLE</q></p>
+                <p class="carousel_content"><q>I'm a review.Click to edit me and add text that says something nice about you and your work.Share a bit of critical acclaim and spur some excitement from your last project</q></p>
+                <p class="carousel_name">Goku</p>
+              </div>
+              <div class="item white_theme">
+                <p class="carousel_heading"><q>PERFECT FOR URBAN RUNNERS</q></p>
+                <p class="carousel_content"><q>I'm a review.Click to edit me and add text from a critic who has evaluated you and your work</q></p>
+                <p class="carousel_name">Ichigo</p>
+              </div>
+              
+            </div>
         </div>
         <div class="footer">
 
@@ -228,29 +256,40 @@
                 </div>
                 <div class="footer_table">
                     <div class="grid_one">
-                        <p class="heading">CONTACT</p>
-                        <p class="heading">LEGAL</p>
-                        <p class="heading">SHOP</p>
-                        <p>info@mysite.com</p>
-                        <p>Terms & Conditions</p>
-                        <p>All Products</p>
-                        <p>123-456-7890</p>
-                        <p>Privacy Policy</p>
-                        <p>Best Sellers</p>
-                        <p>500 Terry Francine St</p>
-                        <p>Shipping Policy</p>
-                        <p>Performance Series</p>
-                        <p class="heading">SOCIAL MEDIA</p>
-                        <p>Refund Policy</p>
-                        <p>Limited Edition</p>
-
+                        <div class="sub_grid_one">
+                            <p class="heading">CONTACT</p>
+                            <p>info@mysite.com</p>                                                        
+                            <p>123-456-7890</p>
+                            <p>500 Terry Francine St</p>                      
+                        </div>
+                        <div class="sub_grid_two">
+                            <div class="sub_grid_two_heading">
+                                <p id="media_heading" class="heading">SOCIAL MEDIA</p>
+                            </div>
+                            <div class="sub_grid_two_content">
+                                <p class="sub_grid">IG</p>
+                                <p class="sub_grid">FB</p>
+                                <p class="sub_grid">TK</p>
+                            </div>
+                            
+                                                                                    
+                        </div>
                     </div>
                     <div class="grid_two">
-                        <p class="sub_grid">IG</p>
-                        <p class="sub_grid">FB</p>
-                        <p class="sub_grid">TK</p>
-                        <p>Accesbility statement</p>
-                        <p>Kids COllection</p>
+                        <p class="heading">LEGAL</p>                        
+                        <p>Terms & Conditions</p>
+                        <p>Privacy Policy</p>                                                
+                        <p>Shipping Policy</p>
+                        <p>Refund Policy</p>
+                        <p>Accesbility statement</p>                        
+                    </div>
+                    <div class="grid_three">
+                        <p class="heading">SHOP</p>
+                        <p>All Products</p>
+                        <p>Best Sellers</p>
+                        <p>Performance Series</p>
+                        <p>Limited Edition</p>
+                        <p>Kids Collection</p>
                     </div>
                     
                     
@@ -262,6 +301,20 @@
             </div>
 
         </div>
+        <script>
+            $('#owl-carousel').owlCarousel({
+                loop: true,
+                margin: 30,
+                dots: false,
+                nav: true,
+                items: 2,
+                
+                navText: ["<",">"]
+            })
+        </script>
+        <script>
+            AOS.init();
+        </script>
     </body>
     
 </html>
